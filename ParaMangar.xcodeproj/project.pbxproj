@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C547F4E31A91F29E00C6492C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F4E21A91F29E00C6492C /* AppDelegate.swift */; };
+		C547F4E81A91F29E00C6492C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C547F4E61A91F29E00C6492C /* Main.storyboard */; };
+		C547F4EA1A91F29E00C6492C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C547F4E91A91F29E00C6492C /* Images.xcassets */; };
+		C547F4ED1A91F29E00C6492C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C547F4EB1A91F29E00C6492C /* LaunchScreen.xib */; };
+		C547F4F91A91F29E00C6492C /* ParaMangarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F4F81A91F29E00C6492C /* ParaMangarTests.swift */; };
+		C547F50C1A91F2AE00C6492C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F50B1A91F2AE00C6492C /* InterfaceController.swift */; };
+		C547F50E1A91F2AE00C6492C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F50D1A91F2AE00C6492C /* NotificationController.swift */; };
+		C547F5101A91F2AE00C6492C /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F50F1A91F2AE00C6492C /* GlanceController.swift */; };
+		C547F5121A91F2AE00C6492C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C547F5111A91F2AE00C6492C /* Images.xcassets */; };
+		C547F5161A91F2AE00C6492C /* ParaMangar WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = C547F5151A91F2AE00C6492C /* ParaMangar WatchKit App.app */; };
+		C547F51E1A91F2AE00C6492C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C547F51C1A91F2AE00C6492C /* Interface.storyboard */; };
+		C547F5201A91F2AE00C6492C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C547F51F1A91F2AE00C6492C /* Images.xcassets */; };
+		C547F5231A91F2AE00C6492C /* ParaMangar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C547F5061A91F2AE00C6492C /* ParaMangar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C547F5351A91F2F500C6492C /* ParaMangarLib.h in Headers */ = {isa = PBXBuildFile; fileRef = C547F5341A91F2F500C6492C /* ParaMangarLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C547F53B1A91F2F500C6492C /* ParaMangarLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C547F5301A91F2F500C6492C /* ParaMangarLib.framework */; };
+		C547F5441A91F2F500C6492C /* ParaMangarLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F5431A91F2F500C6492C /* ParaMangarLibTests.swift */; };
+		C547F5471A91F2F500C6492C /* ParaMangarLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C547F5301A91F2F500C6492C /* ParaMangarLib.framework */; };
+		C547F5481A91F2F500C6492C /* ParaMangarLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C547F5301A91F2F500C6492C /* ParaMangarLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C547F5511A91F32000C6492C /* ParaMangar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F5501A91F32000C6492C /* ParaMangar.swift */; };
+		C59776101AAF0AC1002D96A2 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597760F1AAF0AC1002D96A2 /* MainMenuViewController.swift */; };
+		C59776121AAF0AFB002D96A2 /* Sample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59776111AAF0AFB002D96A2 /* Sample1ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C547F4F31A91F29E00C6492C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C547F4D51A91F29E00C6492C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C547F4DC1A91F29E00C6492C;
+			remoteInfo = ParaMangar;
+		};
+		C547F5171A91F2AE00C6492C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C547F4D51A91F29E00C6492C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C547F5141A91F2AE00C6492C;
+			remoteInfo = "ParaMangar WatchKit App";
+		};
+		C547F5211A91F2AE00C6492C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C547F4D51A91F29E00C6492C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C547F5051A91F2AE00C6492C;
+			remoteInfo = "ParaMangar WatchKit Extension";
+		};
+		C547F53C1A91F2F500C6492C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C547F4D51A91F29E00C6492C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C547F52F1A91F2F500C6492C;
+			remoteInfo = ParaMangarLib;
+		};
+		C547F53E1A91F2F500C6492C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C547F4D51A91F29E00C6492C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C547F4DC1A91F29E00C6492C;
+			remoteInfo = ParaMangar;
+		};
+		C547F5451A91F2F500C6492C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C547F4D51A91F29E00C6492C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C547F52F1A91F2F500C6492C;
+			remoteInfo = ParaMangarLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C547F52A1A91F2AE00C6492C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C547F5231A91F2AE00C6492C /* ParaMangar WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F54C1A91F2F500C6492C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C547F5481A91F2F500C6492C /* ParaMangarLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C547F4DD1A91F29E00C6492C /* ParaMangar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParaMangar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547F4E11A91F29E00C6492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C547F4E21A91F29E00C6492C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C547F4E71A91F29E00C6492C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C547F4E91A91F29E00C6492C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C547F4EC1A91F29E00C6492C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C547F4F21A91F29E00C6492C /* ParaMangarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParaMangarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547F4F71A91F29E00C6492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C547F4F81A91F29E00C6492C /* ParaMangarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaMangarTests.swift; sourceTree = "<group>"; };
+		C547F5061A91F2AE00C6492C /* ParaMangar WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ParaMangar WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547F5091A91F2AE00C6492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C547F50A1A91F2AE00C6492C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C547F50B1A91F2AE00C6492C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C547F50D1A91F2AE00C6492C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C547F50F1A91F2AE00C6492C /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		C547F5111A91F2AE00C6492C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C547F5151A91F2AE00C6492C /* ParaMangar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParaMangar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547F51B1A91F2AE00C6492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C547F51D1A91F2AE00C6492C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C547F51F1A91F2AE00C6492C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C547F5301A91F2F500C6492C /* ParaMangarLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParaMangarLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547F5331A91F2F500C6492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C547F5341A91F2F500C6492C /* ParaMangarLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParaMangarLib.h; sourceTree = "<group>"; };
+		C547F53A1A91F2F500C6492C /* ParaMangarLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParaMangarLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C547F5421A91F2F500C6492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C547F5431A91F2F500C6492C /* ParaMangarLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParaMangarLibTests.swift; sourceTree = "<group>"; };
+		C547F5501A91F32000C6492C /* ParaMangar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParaMangar.swift; sourceTree = "<group>"; };
+		C597760F1AAF0AC1002D96A2 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		C59776111AAF0AFB002D96A2 /* Sample1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample1ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C547F4DA1A91F29E00C6492C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F5471A91F2F500C6492C /* ParaMangarLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F4EF1A91F29E00C6492C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5031A91F2AE00C6492C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F52C1A91F2F500C6492C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5371A91F2F500C6492C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F53B1A91F2F500C6492C /* ParaMangarLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C547F4D41A91F29E00C6492C = {
+			isa = PBXGroup;
+			children = (
+				C547F4DF1A91F29E00C6492C /* ParaMangar */,
+				C547F4F51A91F29E00C6492C /* ParaMangarTests */,
+				C547F5071A91F2AE00C6492C /* ParaMangar WatchKit Extension */,
+				C547F5191A91F2AE00C6492C /* ParaMangar WatchKit App */,
+				C547F5311A91F2F500C6492C /* ParaMangarLib */,
+				C547F5401A91F2F500C6492C /* ParaMangarLibTests */,
+				C547F4DE1A91F29E00C6492C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C547F4DE1A91F29E00C6492C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C547F4DD1A91F29E00C6492C /* ParaMangar.app */,
+				C547F4F21A91F29E00C6492C /* ParaMangarTests.xctest */,
+				C547F5061A91F2AE00C6492C /* ParaMangar WatchKit Extension.appex */,
+				C547F5151A91F2AE00C6492C /* ParaMangar WatchKit App.app */,
+				C547F5301A91F2F500C6492C /* ParaMangarLib.framework */,
+				C547F53A1A91F2F500C6492C /* ParaMangarLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C547F4DF1A91F29E00C6492C /* ParaMangar */ = {
+			isa = PBXGroup;
+			children = (
+				C547F4E21A91F29E00C6492C /* AppDelegate.swift */,
+				C597760F1AAF0AC1002D96A2 /* MainMenuViewController.swift */,
+				C59776111AAF0AFB002D96A2 /* Sample1ViewController.swift */,
+				C547F4E61A91F29E00C6492C /* Main.storyboard */,
+				C547F4E91A91F29E00C6492C /* Images.xcassets */,
+				C547F4EB1A91F29E00C6492C /* LaunchScreen.xib */,
+				C547F4E01A91F29E00C6492C /* Supporting Files */,
+			);
+			path = ParaMangar;
+			sourceTree = "<group>";
+		};
+		C547F4E01A91F29E00C6492C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C547F4E11A91F29E00C6492C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C547F4F51A91F29E00C6492C /* ParaMangarTests */ = {
+			isa = PBXGroup;
+			children = (
+				C547F4F81A91F29E00C6492C /* ParaMangarTests.swift */,
+				C547F4F61A91F29E00C6492C /* Supporting Files */,
+			);
+			path = ParaMangarTests;
+			sourceTree = "<group>";
+		};
+		C547F4F61A91F29E00C6492C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C547F4F71A91F29E00C6492C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C547F5071A91F2AE00C6492C /* ParaMangar WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C547F50B1A91F2AE00C6492C /* InterfaceController.swift */,
+				C547F50D1A91F2AE00C6492C /* NotificationController.swift */,
+				C547F50F1A91F2AE00C6492C /* GlanceController.swift */,
+				C547F5111A91F2AE00C6492C /* Images.xcassets */,
+				C547F5081A91F2AE00C6492C /* Supporting Files */,
+			);
+			path = "ParaMangar WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C547F5081A91F2AE00C6492C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C547F5091A91F2AE00C6492C /* Info.plist */,
+				C547F50A1A91F2AE00C6492C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C547F5191A91F2AE00C6492C /* ParaMangar WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C547F51C1A91F2AE00C6492C /* Interface.storyboard */,
+				C547F51F1A91F2AE00C6492C /* Images.xcassets */,
+				C547F51A1A91F2AE00C6492C /* Supporting Files */,
+			);
+			path = "ParaMangar WatchKit App";
+			sourceTree = "<group>";
+		};
+		C547F51A1A91F2AE00C6492C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C547F51B1A91F2AE00C6492C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C547F5311A91F2F500C6492C /* ParaMangarLib */ = {
+			isa = PBXGroup;
+			children = (
+				C547F5341A91F2F500C6492C /* ParaMangarLib.h */,
+				C547F5501A91F32000C6492C /* ParaMangar.swift */,
+				C547F5321A91F2F500C6492C /* Supporting Files */,
+			);
+			path = ParaMangarLib;
+			sourceTree = "<group>";
+		};
+		C547F5321A91F2F500C6492C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C547F5331A91F2F500C6492C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C547F5401A91F2F500C6492C /* ParaMangarLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				C547F5431A91F2F500C6492C /* ParaMangarLibTests.swift */,
+				C547F5411A91F2F500C6492C /* Supporting Files */,
+			);
+			path = ParaMangarLibTests;
+			sourceTree = "<group>";
+		};
+		C547F5411A91F2F500C6492C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C547F5421A91F2F500C6492C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C547F52D1A91F2F500C6492C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F5351A91F2F500C6492C /* ParaMangarLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C547F4DC1A91F29E00C6492C /* ParaMangar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C547F4FC1A91F29E00C6492C /* Build configuration list for PBXNativeTarget "ParaMangar" */;
+			buildPhases = (
+				C547F4D91A91F29E00C6492C /* Sources */,
+				C547F4DA1A91F29E00C6492C /* Frameworks */,
+				C547F4DB1A91F29E00C6492C /* Resources */,
+				C547F52A1A91F2AE00C6492C /* Embed App Extensions */,
+				C547F54C1A91F2F500C6492C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C547F5221A91F2AE00C6492C /* PBXTargetDependency */,
+				C547F5461A91F2F500C6492C /* PBXTargetDependency */,
+			);
+			name = ParaMangar;
+			productName = ParaMangar;
+			productReference = C547F4DD1A91F29E00C6492C /* ParaMangar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C547F4F11A91F29E00C6492C /* ParaMangarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C547F4FF1A91F29E00C6492C /* Build configuration list for PBXNativeTarget "ParaMangarTests" */;
+			buildPhases = (
+				C547F4EE1A91F29E00C6492C /* Sources */,
+				C547F4EF1A91F29E00C6492C /* Frameworks */,
+				C547F4F01A91F29E00C6492C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C547F4F41A91F29E00C6492C /* PBXTargetDependency */,
+			);
+			name = ParaMangarTests;
+			productName = ParaMangarTests;
+			productReference = C547F4F21A91F29E00C6492C /* ParaMangarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C547F5051A91F2AE00C6492C /* ParaMangar WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C547F5271A91F2AE00C6492C /* Build configuration list for PBXNativeTarget "ParaMangar WatchKit Extension" */;
+			buildPhases = (
+				C547F5021A91F2AE00C6492C /* Sources */,
+				C547F5031A91F2AE00C6492C /* Frameworks */,
+				C547F5041A91F2AE00C6492C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C547F5181A91F2AE00C6492C /* PBXTargetDependency */,
+			);
+			name = "ParaMangar WatchKit Extension";
+			productName = "ParaMangar WatchKit Extension";
+			productReference = C547F5061A91F2AE00C6492C /* ParaMangar WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		C547F5141A91F2AE00C6492C /* ParaMangar WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C547F5241A91F2AE00C6492C /* Build configuration list for PBXNativeTarget "ParaMangar WatchKit App" */;
+			buildPhases = (
+				C547F5131A91F2AE00C6492C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParaMangar WatchKit App";
+			productName = "ParaMangar WatchKit App";
+			productReference = C547F5151A91F2AE00C6492C /* ParaMangar WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		C547F52F1A91F2F500C6492C /* ParaMangarLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C547F5491A91F2F500C6492C /* Build configuration list for PBXNativeTarget "ParaMangarLib" */;
+			buildPhases = (
+				C547F52B1A91F2F500C6492C /* Sources */,
+				C547F52C1A91F2F500C6492C /* Frameworks */,
+				C547F52D1A91F2F500C6492C /* Headers */,
+				C547F52E1A91F2F500C6492C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParaMangarLib;
+			productName = ParaMangarLib;
+			productReference = C547F5301A91F2F500C6492C /* ParaMangarLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C547F5391A91F2F500C6492C /* ParaMangarLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C547F54D1A91F2F500C6492C /* Build configuration list for PBXNativeTarget "ParaMangarLibTests" */;
+			buildPhases = (
+				C547F5361A91F2F500C6492C /* Sources */,
+				C547F5371A91F2F500C6492C /* Frameworks */,
+				C547F5381A91F2F500C6492C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C547F53D1A91F2F500C6492C /* PBXTargetDependency */,
+				C547F53F1A91F2F500C6492C /* PBXTargetDependency */,
+			);
+			name = ParaMangarLibTests;
+			productName = ParaMangarLibTests;
+			productReference = C547F53A1A91F2F500C6492C /* ParaMangarLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C547F4D51A91F29E00C6492C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = akisute;
+				TargetAttributes = {
+					C547F4DC1A91F29E00C6492C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C547F4F11A91F29E00C6492C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = C547F4DC1A91F29E00C6492C;
+					};
+					C547F5051A91F2AE00C6492C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C547F5141A91F2AE00C6492C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C547F52F1A91F2F500C6492C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C547F5391A91F2F500C6492C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = C547F4DC1A91F29E00C6492C;
+					};
+				};
+			};
+			buildConfigurationList = C547F4D81A91F29E00C6492C /* Build configuration list for PBXProject "ParaMangar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C547F4D41A91F29E00C6492C;
+			productRefGroup = C547F4DE1A91F29E00C6492C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C547F4DC1A91F29E00C6492C /* ParaMangar */,
+				C547F4F11A91F29E00C6492C /* ParaMangarTests */,
+				C547F5051A91F2AE00C6492C /* ParaMangar WatchKit Extension */,
+				C547F5141A91F2AE00C6492C /* ParaMangar WatchKit App */,
+				C547F52F1A91F2F500C6492C /* ParaMangarLib */,
+				C547F5391A91F2F500C6492C /* ParaMangarLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C547F4DB1A91F29E00C6492C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F4E81A91F29E00C6492C /* Main.storyboard in Resources */,
+				C547F4ED1A91F29E00C6492C /* LaunchScreen.xib in Resources */,
+				C547F4EA1A91F29E00C6492C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F4F01A91F29E00C6492C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5041A91F2AE00C6492C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F5161A91F2AE00C6492C /* ParaMangar WatchKit App.app in Resources */,
+				C547F5121A91F2AE00C6492C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5131A91F2AE00C6492C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F51E1A91F2AE00C6492C /* Interface.storyboard in Resources */,
+				C547F5201A91F2AE00C6492C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F52E1A91F2F500C6492C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5381A91F2F500C6492C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C547F4D91A91F29E00C6492C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59776101AAF0AC1002D96A2 /* MainMenuViewController.swift in Sources */,
+				C59776121AAF0AFB002D96A2 /* Sample1ViewController.swift in Sources */,
+				C547F4E31A91F29E00C6492C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F4EE1A91F29E00C6492C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F4F91A91F29E00C6492C /* ParaMangarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5021A91F2AE00C6492C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F50E1A91F2AE00C6492C /* NotificationController.swift in Sources */,
+				C547F50C1A91F2AE00C6492C /* InterfaceController.swift in Sources */,
+				C547F5101A91F2AE00C6492C /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F52B1A91F2F500C6492C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F5511A91F32000C6492C /* ParaMangar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C547F5361A91F2F500C6492C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C547F5441A91F2F500C6492C /* ParaMangarLibTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C547F4F41A91F29E00C6492C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C547F4DC1A91F29E00C6492C /* ParaMangar */;
+			targetProxy = C547F4F31A91F29E00C6492C /* PBXContainerItemProxy */;
+		};
+		C547F5181A91F2AE00C6492C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C547F5141A91F2AE00C6492C /* ParaMangar WatchKit App */;
+			targetProxy = C547F5171A91F2AE00C6492C /* PBXContainerItemProxy */;
+		};
+		C547F5221A91F2AE00C6492C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C547F5051A91F2AE00C6492C /* ParaMangar WatchKit Extension */;
+			targetProxy = C547F5211A91F2AE00C6492C /* PBXContainerItemProxy */;
+		};
+		C547F53D1A91F2F500C6492C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C547F52F1A91F2F500C6492C /* ParaMangarLib */;
+			targetProxy = C547F53C1A91F2F500C6492C /* PBXContainerItemProxy */;
+		};
+		C547F53F1A91F2F500C6492C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C547F4DC1A91F29E00C6492C /* ParaMangar */;
+			targetProxy = C547F53E1A91F2F500C6492C /* PBXContainerItemProxy */;
+		};
+		C547F5461A91F2F500C6492C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C547F52F1A91F2F500C6492C /* ParaMangarLib */;
+			targetProxy = C547F5451A91F2F500C6492C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C547F4E61A91F29E00C6492C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C547F4E71A91F29E00C6492C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C547F4EB1A91F29E00C6492C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C547F4EC1A91F29E00C6492C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C547F51C1A91F2AE00C6492C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C547F51D1A91F2AE00C6492C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C547F4FA1A91F29E00C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C547F4FB1A91F29E00C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C547F4FD1A91F29E00C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = ParaMangar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C547F4FE1A91F29E00C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = ParaMangar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C547F5001A91F29E00C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParaMangarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParaMangar.app/ParaMangar";
+			};
+			name = Debug;
+		};
+		C547F5011A91F29E00C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParaMangarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParaMangar.app/ParaMangar";
+			};
+			name = Release;
+		};
+		C547F5251A91F2AE00C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = ParaMangar_WatchKit_Extension;
+				INFOPLIST_FILE = "ParaMangar WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		C547F5261A91F2AE00C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = ParaMangar_WatchKit_Extension;
+				INFOPLIST_FILE = "ParaMangar WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		C547F5281A91F2AE00C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParaMangar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C547F5291A91F2AE00C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ParaMangar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C547F54A1A91F2F500C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParaMangarLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C547F54B1A91F2F500C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ParaMangarLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C547F54E1A91F2F500C6492C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParaMangarLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParaMangar.app/ParaMangar";
+			};
+			name = Debug;
+		};
+		C547F54F1A91F2F500C6492C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParaMangarLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParaMangar.app/ParaMangar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C547F4D81A91F29E00C6492C /* Build configuration list for PBXProject "ParaMangar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F4FA1A91F29E00C6492C /* Debug */,
+				C547F4FB1A91F29E00C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C547F4FC1A91F29E00C6492C /* Build configuration list for PBXNativeTarget "ParaMangar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F4FD1A91F29E00C6492C /* Debug */,
+				C547F4FE1A91F29E00C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C547F4FF1A91F29E00C6492C /* Build configuration list for PBXNativeTarget "ParaMangarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F5001A91F29E00C6492C /* Debug */,
+				C547F5011A91F29E00C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C547F5241A91F2AE00C6492C /* Build configuration list for PBXNativeTarget "ParaMangar WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F5251A91F2AE00C6492C /* Debug */,
+				C547F5261A91F2AE00C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C547F5271A91F2AE00C6492C /* Build configuration list for PBXNativeTarget "ParaMangar WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F5281A91F2AE00C6492C /* Debug */,
+				C547F5291A91F2AE00C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C547F5491A91F2F500C6492C /* Build configuration list for PBXNativeTarget "ParaMangarLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F54A1A91F2F500C6492C /* Debug */,
+				C547F54B1A91F2F500C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C547F54D1A91F2F500C6492C /* Build configuration list for PBXNativeTarget "ParaMangarLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C547F54E1A91F2F500C6492C /* Debug */,
+				C547F54F1A91F2F500C6492C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C547F4D51A91F29E00C6492C /* Project object */;
+}
