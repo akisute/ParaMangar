@@ -22,6 +22,7 @@ class Sample2ViewController: UIViewController {
             return
         }).toImage(1.0, completion: { image in
             self.animator = nil
+            self.render1SecButton.setTitle("Completed!", forState: UIControlState.Normal)
             self.imageView.image = image
         })
     }
