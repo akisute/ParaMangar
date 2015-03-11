@@ -79,6 +79,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4T0-R6-Cfy" kind="show" id="lop-h4-Gqa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -358,6 +361,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8j-Iv-coK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1195" y="671"/>
+        </scene>
+        <!--Sample 4-->
+        <scene sceneID="6L8-GC-5aB">
+            <objects>
+                <viewController id="4T0-R6-Cfy" customClass="Sample4ViewController" customModule="ParaMangar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DdB-6u-XO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="jD7-xL-Pjd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8q-Mh-Fyr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93Q-pD-iOV">
+                                <rect key="frame" x="162" y="164" width="136" height="170"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="iBo-CU-yxK"/>
+                                    <constraint firstAttribute="width" constant="136" id="ydX-Tc-OcO"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MYc-gI-3Zf">
+                                <rect key="frame" x="302" y="164" width="136" height="170"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="90D-2A-PKE"/>
+                                    <constraint firstAttribute="width" constant="136" id="A5o-hs-Q4b"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-SB-Ccr">
+                                <rect key="frame" x="222" y="350" width="156" height="30"/>
+                                <state key="normal" title="Render 1 sec to Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRender1SecButton:" destination="4T0-R6-Cfy" eventType="touchUpInside" id="4n6-ON-GLL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="93Q-pD-iOV" firstAttribute="centerX" secondItem="b4o-SB-Ccr" secondAttribute="centerX" id="2nP-va-adZ"/>
+                            <constraint firstItem="b4o-SB-Ccr" firstAttribute="top" secondItem="93Q-pD-iOV" secondAttribute="bottom" constant="8" id="5sm-O7-ajo"/>
+                            <constraint firstAttribute="centerX" secondItem="93Q-pD-iOV" secondAttribute="centerX" constant="70" id="Dfm-cL-OYz"/>
+                            <constraint firstItem="MYc-gI-3Zf" firstAttribute="top" secondItem="DdB-6u-XO7" secondAttribute="bottom" constant="100" id="EGB-NK-At0"/>
+                            <constraint firstAttribute="centerY" secondItem="93Q-pD-iOV" secondAttribute="centerY" id="GoL-oe-q8i"/>
+                            <constraint firstItem="b4o-SB-Ccr" firstAttribute="top" secondItem="93Q-pD-iOV" secondAttribute="bottom" constant="16" id="Ijs-aR-Pd4"/>
+                            <constraint firstAttribute="centerX" secondItem="b4o-SB-Ccr" secondAttribute="centerX" id="XQg-Pi-uis"/>
+                            <constraint firstAttribute="centerX" secondItem="MYc-gI-3Zf" secondAttribute="centerX" constant="-70" id="dbd-O5-A6r"/>
+                            <constraint firstItem="93Q-pD-iOV" firstAttribute="top" secondItem="DdB-6u-XO7" secondAttribute="bottom" constant="100" id="ylC-5L-eLt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2nP-va-adZ"/>
+                                <exclude reference="GoL-oe-q8i"/>
+                                <exclude reference="5sm-O7-ajo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample 4" id="o7v-D1-oBe"/>
+                    <connections>
+                        <outlet property="imageView" destination="MYc-gI-3Zf" id="9d3-hX-575"/>
+                        <outlet property="render1SecButton" destination="b4o-SB-Ccr" id="JQt-nv-JC6"/>
+                        <outlet property="targetView" destination="93Q-pD-iOV" id="ftN-Mq-5iS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJg-kv-dec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195" y="1340"/>
         </scene>
     </scenes>
 </document>

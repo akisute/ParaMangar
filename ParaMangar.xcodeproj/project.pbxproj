@@ -30,6 +30,7 @@
 		C547F5511A91F32000C6492C /* ParaMangar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C547F5501A91F32000C6492C /* ParaMangar.swift */; };
 		C59776101AAF0AC1002D96A2 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597760F1AAF0AC1002D96A2 /* MainMenuViewController.swift */; };
 		C59776121AAF0AFB002D96A2 /* Sample1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59776111AAF0AFB002D96A2 /* Sample1ViewController.swift */; };
+		C5E749D01AB02135006A6611 /* Sample4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E749CF1AB02135006A6611 /* Sample4ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		C547F5501A91F32000C6492C /* ParaMangar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParaMangar.swift; sourceTree = "<group>"; };
 		C597760F1AAF0AC1002D96A2 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		C59776111AAF0AFB002D96A2 /* Sample1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample1ViewController.swift; sourceTree = "<group>"; };
+		C5E749CF1AB02135006A6611 /* Sample4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample4ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				C59776111AAF0AFB002D96A2 /* Sample1ViewController.swift */,
 				C5462C3D1AB01434001ED15B /* Sample2ViewController.swift */,
 				C5462C3F1AB01CC3001ED15B /* Sample3ViewController.swift */,
+				C5E749CF1AB02135006A6611 /* Sample4ViewController.swift */,
 				C547F4E61A91F29E00C6492C /* Main.storyboard */,
 				C547F4E91A91F29E00C6492C /* Images.xcassets */,
 				C547F4EB1A91F29E00C6492C /* LaunchScreen.xib */,
@@ -553,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59776101AAF0AC1002D96A2 /* MainMenuViewController.swift in Sources */,
+				C5E749D01AB02135006A6611 /* Sample4ViewController.swift in Sources */,
 				C5462C3E1AB01434001ED15B /* Sample2ViewController.swift in Sources */,
 				C59776121AAF0AFB002D96A2 /* Sample1ViewController.swift in Sources */,
 				C547F4E31A91F29E00C6492C /* AppDelegate.swift in Sources */,
