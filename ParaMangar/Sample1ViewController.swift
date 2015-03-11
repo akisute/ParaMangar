@@ -12,14 +12,20 @@ import ParaMangarLib
 class Sample1ViewController: UIViewController {
     
     @IBOutlet var targetView: UIView!
+    @IBOutlet var frameIntervalLabel: UILabel!
+    @IBOutlet var frameIntervalStepper: UIStepper!
     @IBOutlet var render1SecButton: UIButton!
     
     var animator: ParaMangar?
     
+    @IBAction func onFrameIntervalStepper(sender: UIStepper) {
+        self.frameIntervalLabel.text = "\(Int(self.frameIntervalStepper.value))"
+    }
+    
     @IBAction func onRender1SecButton(sender: UIButton) {
         self.animator = ParaMangar.renderAnimationOfView(self.targetView, duration: 1.0, delay: 0, options: UIViewAnimationOptions.allZeros, animations: {
             return
-        }).toFile("Sample1", completion: {path in
+        }).frameInterval(Int(self.frameIntervalStepper.value)).toFile("Sample1", completion: {path in
             self.animator = nil
             self.render1SecButton.setTitle("Completed!", forState: UIControlState.Normal)
             println("Completed: \(path)")

@@ -50,6 +50,11 @@ public class ParaMangar: NSObject {
         return animator
     }
     
+    public func frameInterval(frameInterval: Int) -> ParaMangar {
+        self.displayLink.frameInterval = frameInterval
+        return self
+    }
+    
     public func toImage(duration: NSTimeInterval, completion: (image: UIImage) -> Void) -> ParaMangar {
         self.renderCompleted = { [unowned self] in
             let image = UIImage.animatedImageWithImages(self.images, duration: duration)
