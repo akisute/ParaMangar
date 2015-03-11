@@ -62,6 +62,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aCb-2M-XNt" kind="show" id="iv5-Nf-alC"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="J40-So-VGr" style="IBUITableViewCellStyleDefault" id="y0S-ss-MyE">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -275,6 +278,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FA-MO-rF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1195" y="-8"/>
+        </scene>
+        <!--Sample 3-->
+        <scene sceneID="51g-hf-wtX">
+            <objects>
+                <viewController id="aCb-2M-XNt" customClass="Sample3ViewController" customModule="ParaMangar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cvz-vA-Am6"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6Y-0m-7Dx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rls-lS-dwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRJ-o9-bNQ">
+                                <rect key="frame" x="162" y="164" width="136" height="170"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb5-c6-OG0">
+                                        <rect key="frame" x="51" y="65" width="34" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="9IE-sl-lqT"/>
+                                    <constraint firstAttribute="height" constant="170" id="UWr-CH-wgW"/>
+                                    <constraint firstAttribute="centerX" secondItem="wb5-c6-OG0" secondAttribute="centerX" id="ZB3-Ks-soB"/>
+                                    <constraint firstAttribute="centerY" secondItem="wb5-c6-OG0" secondAttribute="centerY" id="rlW-gm-q4g"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x5A-Ot-aas">
+                                <rect key="frame" x="302" y="164" width="136" height="170"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="0al-tp-1g9"/>
+                                    <constraint firstAttribute="width" constant="136" id="GEI-IE-O5R"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVA-Qm-Ra7">
+                                <rect key="frame" x="222" y="350" width="156" height="30"/>
+                                <state key="normal" title="Render 1 sec to Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRender1SecButton:" destination="aCb-2M-XNt" eventType="touchUpInside" id="UzG-6P-sQj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="x5A-Ot-aas" secondAttribute="centerX" constant="-70" id="0XQ-sS-biM"/>
+                            <constraint firstItem="tRJ-o9-bNQ" firstAttribute="centerX" secondItem="TVA-Qm-Ra7" secondAttribute="centerX" id="A1G-up-gAk"/>
+                            <constraint firstItem="TVA-Qm-Ra7" firstAttribute="top" secondItem="tRJ-o9-bNQ" secondAttribute="bottom" constant="16" id="HFE-J6-fJO"/>
+                            <constraint firstItem="tRJ-o9-bNQ" firstAttribute="top" secondItem="Cvz-vA-Am6" secondAttribute="bottom" constant="100" id="VOl-Ah-60B"/>
+                            <constraint firstAttribute="centerY" secondItem="tRJ-o9-bNQ" secondAttribute="centerY" id="YtQ-04-eoV"/>
+                            <constraint firstItem="x5A-Ot-aas" firstAttribute="top" secondItem="Cvz-vA-Am6" secondAttribute="bottom" constant="100" id="d82-bb-j0e"/>
+                            <constraint firstAttribute="centerX" secondItem="tRJ-o9-bNQ" secondAttribute="centerX" constant="70" id="hEt-MG-6nm"/>
+                            <constraint firstAttribute="centerX" secondItem="TVA-Qm-Ra7" secondAttribute="centerX" id="uBc-dj-1OI"/>
+                            <constraint firstItem="TVA-Qm-Ra7" firstAttribute="top" secondItem="tRJ-o9-bNQ" secondAttribute="bottom" constant="8" id="wjC-It-wIq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="A1G-up-gAk"/>
+                                <exclude reference="YtQ-04-eoV"/>
+                                <exclude reference="wjC-It-wIq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample 3" id="Kjo-B9-auu"/>
+                    <connections>
+                        <outlet property="animatingView" destination="wb5-c6-OG0" id="fqB-KQ-C6x"/>
+                        <outlet property="imageView" destination="x5A-Ot-aas" id="HQu-Sp-dhf"/>
+                        <outlet property="render1SecButton" destination="TVA-Qm-Ra7" id="N9D-mZ-Lfa"/>
+                        <outlet property="targetView" destination="tRJ-o9-bNQ" id="0Q6-EN-93i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8j-Iv-coK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195" y="671"/>
         </scene>
     </scenes>
 </document>
