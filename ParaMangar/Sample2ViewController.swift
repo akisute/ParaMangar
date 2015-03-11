@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 akisute. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import ParaMangarLib
 
 class Sample2ViewController: UIViewController {
@@ -18,9 +18,8 @@ class Sample2ViewController: UIViewController {
     var animator: ParaMangar?
     
     @IBAction func onRender1SecButton(sender: UIButton) {
-        self.animator = ParaMangar.renderAnimationOfView(self.targetView, duration: 1.0, delay: 0, options: UIViewAnimationOptions.allZeros, animations: {
-            return
-        }).toImage(1.0, completion: { image in
+        let duration = 1.0
+        self.animator = ParaMangar.renderViewForDuration(self.targetView, duration: duration).toImage(duration, completion: { image in
             self.animator = nil
             self.render1SecButton.setTitle("Completed!", forState: UIControlState.Normal)
             self.imageView.image = image

@@ -10,30 +10,24 @@ import UIKit
 
 public class ParaMangar: NSObject {
     
+    // Common ivar
     private var render: (() -> Void)? = nil
     private var renderCompleted: (() -> Void)? = nil
     private var images: [UIImage] = []
-    
+    // Duration Mode only ivar
     private lazy var displayLink: CADisplayLink = CADisplayLink(target: self, selector: "onDisplayLink:")
-    private var targetView: UIView?
+    private var displayLinkTargetView: UIView!
+    private var displayLinkStartTime: NSTimeInterval?
+    private var displayLinkDuration: NSTimeInterval!
     
-    public class func renderAnimationOfView(view: UIView, duration: NSTimeInterval, delay: NSTimeInterval, options: UIViewAnimationOptions, animations: () -> Void) -> ParaMangar {
+    public class func renderViewForDuration(view: UIView, duration: NSTimeInterval, frameInterval: Int = 1, block: (() -> Void)? = nil) -> ParaMangar {
         let animator = ParaMangar()
-        UIView.animateWithDuration(duration, delay: delay, options: options, animations: animations, completion: nil)
-        animator.targetView = view
-        animator.displayLink.frameInterval = 1
-        if (delay > 0) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-                animator.displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSDefaultRunLoopMode)
-            }
-        } else {
-            animator.displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSDefaultRunLoopMode)
-        }
-        
-        // TODO: should not use dispatch_after after all, it's not precise at all
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64((duration+delay) * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-            animator.displayLink.invalidate()
-            animator.renderCompleted?()
+        animator.displayLinkTargetView = view
+        animator.displayLinkDuration = duration
+        animator.displayLink.frameInterval = frameInterval
+        animator.displayLink.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSDefaultRunLoopMode)
+        if let b = block {
+            b()
         }
         return animator
     }
@@ -48,11 +42,6 @@ public class ParaMangar: NSObject {
             animator.renderCompleted?()
         }
         return animator
-    }
-    
-    public func frameInterval(frameInterval: Int) -> ParaMangar {
-        self.displayLink.frameInterval = frameInterval
-        return self
     }
     
     public func toImage(duration: NSTimeInterval, completion: (image: UIImage) -> Void) -> ParaMangar {
@@ -81,8 +70,16 @@ public class ParaMangar: NSObject {
     // MARK: Actions
     
     func onDisplayLink(sender: CADisplayLink) {
-        if let view = self.targetView {
-            self.renderFrame(view)
+        if self.displayLinkStartTime == nil {
+            self.displayLinkStartTime = self.displayLink.timestamp
+        }
+        let startTime = self.displayLinkStartTime!
+        
+        self.renderFrame(self.displayLinkTargetView)
+        
+        if self.displayLink.timestamp - startTime > self.displayLinkDuration {
+            self.displayLink.invalidate()
+            self.renderCompleted?()
         }
     }
     
