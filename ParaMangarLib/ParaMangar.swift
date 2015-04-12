@@ -87,7 +87,7 @@ public class ParaMangar: NSObject {
     
     private var documentsDirectory: String {
         let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        return paths.last as String
+        return paths.last as! String
     }
     
     private func imageDirectoryPath(fileName: String) -> String {
@@ -95,7 +95,7 @@ public class ParaMangar: NSObject {
     }
 
     private func imageFilePathForIndex(fileName: String, index: Int) -> String {
-        return self.imageDirectoryPath(fileName).stringByAppendingPathComponent(NSString(format: "%@-%d@2x.png", fileName, index))
+        return self.imageDirectoryPath(fileName).stringByAppendingPathComponent(NSString(format: "%@-%d@2x.png", fileName, index) as String)
     }
     
     private func renderFrame(view: UIView) {
