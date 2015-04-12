@@ -5,7 +5,7 @@ ParaMangar renders ordinal `UIView` or `CALayer` animations into animations that
 This project is heavily inspired by [frosty/Flipbook](https://github.com/frosty/Flipbook) and is trying to improve it by several ways,
 including makeing API more swift-like syntax, adding dynamic UIImage generation, and so on.
 
-ParaMangar is licensed under the MIT license.
+ParaMangar is licensed under the MIT license. ParaMangar requires Xcode 6.3 (Swift version 1.2) or later to build.
 
 ## Usage
 
